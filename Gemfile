@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+gem 'active_model_serializers'
+gem 'rails-api'
+
+gem 'grape'
+gem 'hashie-forbidden_attributes'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'

@@ -1,6 +1,19 @@
 
 Rails.application.routes.draw do
   resources :recipes
+
+  namespace :api do
+    namespace :v1 do
+      resources :recipes
+    end
+    namespace :v2 do
+      resources :recipes
+    end
+
+  end
+
+  # mount Cookbook::API => '/'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
